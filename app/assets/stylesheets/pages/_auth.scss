@@ -1,0 +1,65 @@
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+
+#auth {
+	display: flex;
+	.logo {
+		width: 70px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+	h1 {
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+		font-family: $font-family;
+		font-family: SF Pro Display;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		font-size: 30px;
+		text-align: center;
+		color: #000000;
+	}
+	.divider {
+		max-width: 400px;
+		margin: 0 auto;
+		margin: 30px auto;
+		p { width:100%; text-align:center; border-bottom: 1px solid #BBC4C9; line-height:0.1em; margin:10px 0 20px; } 
+		p span { color: #BBC4C9; background:#fff; padding:0 10px; }
+	}
+	.btn-auth--google {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-color: #4285F4;
+		padding: 10px;
+		max-width: 400px;
+		margin: 0 auto;
+		border-radius: 4px;
+		img {
+
+		}
+		.link-text {
+			width: 100%;
+			font-family: SF Pro Display;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 16px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+			margin-left: -46px;
+		}
+	}
+}

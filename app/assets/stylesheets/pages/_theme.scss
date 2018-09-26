@@ -1,0 +1,104 @@
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+.theme-page {
+	margin-top: 120px;
+	.more-themes {
+		h4 {
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 12px;
+			color: #000000;
+			margin-bottom: 15px;
+		}
+	}
+	.theme-card {
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.05);
+		border-top: none;
+		box-sizing: border-box;
+		padding: 10px 15px;
+		display: flex;
+		justify-content: space-between;
+		h5 {
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 14px;
+			color: #000000;
+		}
+		.price-tag {
+			display: flex;
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 14px;
+			color: #27AE60;	
+		}
+	}
+	.theme-actions {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		.back {
+			margin-right: 40px;
+		}
+		.title {
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 24px;
+			color: #000000;
+		}
+	}
+	.theme-details {
+		background: white;
+		box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.025);
+		padding: 30px;
+		margin-bottom: 60px;
+		.price {
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 49px;
+			font-size: 24px;
+			color: #5ED0C0;
+		}
+		.updated, .sales, .views {
+			font-family: Fira Sans;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 29px;
+			font-size: 14px;
+			color: #40494F;
+		}
+		.updated {
+			display: flex;
+			align-items: center;
+		}
+	}
+	.features {
+		margin: 30px auto;
+	}
+	.feature {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+		font-family: Fira Sans;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 30px;
+		font-size: 14px;
+		color: #71777B;
+		img {
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= csrf_meta_tags %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Bolt</title>
+
+<meta name="description" content="Kalusto -  A place to find curated resources for designers" />
+
+    <link rel="shortcut icon" href="favicon.png"/>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+       <div class="body-container">
+       		<%= yield %>
+       </div>
+    
+  </body>
+</html>

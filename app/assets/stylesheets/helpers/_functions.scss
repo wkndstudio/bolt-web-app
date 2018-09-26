@@ -1,0 +1,9 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+// ----------- Typography PX to REM ----------- //
+
+// PX to REM - Usage: font-size: rem(37px);
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}

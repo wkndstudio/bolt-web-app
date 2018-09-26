@@ -1,0 +1,39 @@
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+.footer {
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: #C2C8CC;
+	align-items: center;
+	box-shadow: none;
+	z-index: 14;
+	margin: 0 auto;
+	.copyright {
+		font-family: $body-font;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 14px;
+		color: #000000;
+		opacity: 0.45;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+	.brand {
+		margin-right: 30px;
+	}
+  @include respond-to('medium') {
+  	justify-content: center;
+  	margin:0 auto;
+  }
+}

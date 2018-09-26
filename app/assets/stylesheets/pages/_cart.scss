@@ -1,0 +1,20 @@
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+#cart {
+	background: white;
+	.cart-section {
+		background: white;
+		height: 100%;
+		width: 100%;
+		.image {
+			margin-bottom: 40px;
+		}
+		h3 {
+			text-align: center;
+
+		}
+	}
+}
