@@ -56,6 +56,12 @@ group :development do
   
   gem "better_errors"
   gem "binding_of_callers"
+  
+  gem 'invoicing'
+
+  gem 'wicked_pdf'
+  #The simplest way to install all of the binaries on most Linux or OSX systems is through the gem wkhtmltopdf-binary.
+  gem 'wkhtmltopdf-binary' 
 
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
