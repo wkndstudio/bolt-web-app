@@ -1,0 +1,46 @@
+%nav#appTopNavbar.sidebar.sidebar--mains
+   .content-container
+      #searchBar.search-bar
+         .search
+            -# = form_tag(projects_path, method: :get) do
+            -#    <i class="feather-icons-header" data-feather="search"> </i>
+            -#    = text_field_tag :term, nil, :placeholder =>  'Try searching "Tesla" ', id: :'mainHeaderSearch', autocomplete: :off
+            -#    = submit_tag 'Search', :name => "nil"
+      .row
+         .col-xs-12.header__links.header__links--actions
+            - if user_signed_in?
+               = link_to 'sign out', destroy_user_session_path, :method => :delete
+            - else   
+               %a{:href => "/users/sign_in", :class => "button button--login"}
+                  Log In
+               %a{:href => "/users/sign_up", :class => "button button--signup"}
+                  Sign Up
+-# .header--mobile.header--mobile--open
+-#    .container
+-#       .row.header--mobile__top
+-#          .col-xs-6.header__links--mobile
+-#             %a{:href => "/", :class => "brand brand-logo"}
+-#                %img{:src => "/assets/brand/dunked-up-logo.svg",  :alt => "Dunked.co"}/
+-#          .col-xs-6.header__menu--mobile
+-#             .b-container
+-#                .b-menu
+-#                   .b-bun.b-bun--top
+-#                   .b-bun.b-bun--mid
+-#                   .b-bun.b-bun--bottom
+-#       .row.header--mobile__body
+-#          .col-xs-12.header--mobile__section
+-#             %ul
+-#                .header-mobile__link__section
+-#                   %li
+-#                      = link_to('Projects', edit_user_registration_path, method: :get) 
+-#                   %li
+-#                      = link_to('Shots', edit_user_registration_path, method: :get) 
+-#                   %li
+-#                      = link_to('Stats', edit_user_registration_path, method: :get) 
+-#                .header-mobile__link__section
+-#                   %li
+-#                      = link_to('Settings', edit_user_registration_path, method: :get) 
+-#                   %li
+-#                      = link_to('Log Out', destroy_user_session_path, method: :delete)
+-#                .header-mobile__link__profile
+-#                   .header-mobile__profile

@@ -149,7 +149,11 @@ p.lead {
 a {
     font-family: $header-fonts;
     display: inline-block;
-    color: $link-color;
+    color: #1F2B36;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
     text-decoration: none;
     @include transition(all .2s ease);
 }
