@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 	# get "/pages/*page" => "pages#show"
 	resources :invoicing_ledger_items
 	resources :invoices
+	resources :dashboard
 	get "/*page" => "pages#show"
-	root 'pages#home'
+	get "/*dashboard" => "dashboard#index"
+	root 'dashboard#index'
 end

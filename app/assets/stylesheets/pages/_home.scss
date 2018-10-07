@@ -3,6 +3,170 @@
 @import 'helpers/mixins';
 @import 'helpers/helpers';
 
+
+.main-content {
+	padding-left: 250px;
+	width: calc(100%- 250px);
+	.dashboard-container {
+		padding: 0 80px;
+	}
+}
+
+//dashboard styling 
+.dashboard {
+	.row--stats {
+		margin-bottom: 30px;
+	}
+	&__stats-card {
+		padding: 20px;
+		background: #FFFFFF;
+		border: 1px solid #ECECEC;
+		box-sizing: border-box;
+		border-radius: 5px;
+		.label {
+			margin-top: 40px;
+			margin-bottom: 10px;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 14px;
+			color: #888888;
+		}
+		.number {
+			margin-bottom: 20px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 32px;
+			letter-spacing: -0.04em;
+			color: #000000;
+		}
+		.action {
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 14px;
+			color: #000000;
+			a {
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				font-size: 14px;
+				text-align: center;
+				color: #000000;
+				background-color: white;
+				color: black;
+				padding: 10px 0px;
+				border-radius: 2px;
+			}
+		}
+	}
+	&__recent-card {
+		background: #FFFFFF;
+		border: 1px solid #ECECEC;
+		border-radius: 5px;
+		&__header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+			background: #F4F5F7;
+			border-radius: 5px;
+			.heading {
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				font-size: 16px;
+				color: #3B434F;
+			}
+		}
+		&__body {
+			.card {
+				padding: 20px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				.status-pill {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					padding: 10px 20px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					font-size: 12px;
+					letter-spacing: -0.0278em;
+					border-radius: 20px;
+					&--paid {
+						background: #F3FFED;
+						color: #53A138;
+					}
+				}
+				.left {
+					display: flex;
+					flex-direction: column;
+					.title {
+						margin-bottom: 10px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+						font-size: 14px;
+						letter-spacing: -0.0278em;
+						color: #3B434F;
+					}
+					.desc {
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+						font-size: 12px;
+						color: #B6C3CA;
+						opacity: 0.75;
+					}
+				}
+			}
+		}
+	}
+	&__cta-card {
+		padding: 20px;
+		background: #FFD600;
+		border-radius: 5px;
+		.label  {
+			margin-top: 40px;
+			margin-bottom: 10px;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 14px;
+			color: rgba(white, 0.75);
+		}
+		.number {
+			margin-bottom: 20px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+			font-size: 32px;
+			letter-spacing: -0.04em;
+			color: #FFFFFF;
+		}
+		.action {
+			a {
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+				font-size: 14px;
+				text-align: center;
+				color: #FFFFFF;
+				background-color: black;
+				color: white;
+				padding: 10px 20px;
+				border-radius: 2px;
+			}
+		}
+	}
+}
 body {
 	height: 100%;
 	width: 100%;

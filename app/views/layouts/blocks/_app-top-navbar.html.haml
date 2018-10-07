@@ -1,13 +1,10 @@
 %nav#appTopNavbar.sidebar.sidebar--mains
    .content-container
-      #searchBar.search-bar
-         .search
-            -# = form_tag(projects_path, method: :get) do
-            -#    <i class="feather-icons-header" data-feather="search"> </i>
-            -#    = text_field_tag :term, nil, :placeholder =>  'Try searching "Tesla" ', id: :'mainHeaderSearch', autocomplete: :off
-            -#    = submit_tag 'Search', :name => "nil"
       .row
-         .col-xs-12.header__links.header__links--actions
+         .col-xs-12.col-md-6
+            .content
+               %h4 Bolt Home
+         .col-xs-12.col-md-6.header__links.header__links--actions
             - if user_signed_in?
                = link_to 'sign out', destroy_user_session_path, :method => :delete
             - else   

@@ -1,0 +1,48 @@
+= render 'layouts/blocks/sidebar-main'
+= render 'layouts/blocks/app-top-navbar'
+.main-content.dashboard
+	.dashboard-container
+		.row.row--stats
+			.col-xs-4
+				.dashboard__stats-card
+					.label
+						Label 1
+					.number
+						$10,204.88
+					.action
+						%a{:href => ""}
+							Read More
+			.col-xs-4
+				.dashboard__stats-card
+					.label
+						Label 1
+					.number
+						$10,204.88
+					.action
+						%a{:href => ""}
+							Read More
+			.col-xs-4
+				.dashboard__cta-card.dashboard__cta-card--feedback
+					.label
+						Feedback
+					.number
+						Have a minute?
+					.action
+						%a{:href => ""}
+							Give Feedback
+		.row
+			.col-xs-offset-8.col-xs-4
+				.dashboard__recent-card.dashboard__recent-card--invoices
+					.dashboard__recent-card__header
+						.heading Invoices
+						.action
+							%a{:href => "#"}
+								%img{:src => "/images/icons/arrow--right.svg", :alt => "See All"}/
+					.dashboard__recent-card__body
+						.card
+							.left
+								.title Robins & Morton Something
+								.desc Something
+							.right
+								.status-pill.status-pill--paid
+									Paid
